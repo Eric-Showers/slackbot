@@ -1,4 +1,5 @@
 const Botkit = require('botkit');
+const emojiFromWord = require('emoji-from-word');
 
 const dotenv = require('dotenv');
 dotenv.load();
