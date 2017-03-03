@@ -41,7 +41,7 @@ controller.hears('by Daniel Frankcom', ['direct_message','ambient'], (bot, messa
 );
 
 //Taunt Phil
-controller.hears('by Daniel Frankcom', ['direct_message','ambient'], (bot, message) => {
+controller.hears('by phildenhoff', ['direct_message','ambient'], (bot, message) => {
     bot.api.reactions.add(createReaction(message, 'shit'));
     }
 );
