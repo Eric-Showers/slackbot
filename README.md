@@ -1,1 +1,1 @@
-"# slckbot" 
+"# slackbot" 
