@@ -6,7 +6,7 @@ dotenv.load();
 
 const port = process.env.PORT || 3000;
 const controller = Botkit.slackbot({
-    debug: true
+    debug: false
 });
 
 controller.setupWebserver(port, (err) => {
