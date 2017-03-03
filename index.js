@@ -14,8 +14,8 @@ controller.setupWebserver(port, (err) => {
 });
 
 controller.spawn({
-    //token: "xoxb-145209201155-RUhyiCdHPseggkj9jcbmAVys"
-    token: SLACK_API_TOKEN
+    token: "xoxb-145209201155-Q33ZyQjgwaGs5WPGtxmghVmY"
+    //token: process.env.SLACK_API_TOKEN
 }).startRTM();
 
 const createReaction = (message, emoji) => ({
