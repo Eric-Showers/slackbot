@@ -40,12 +40,19 @@ controller.hears('by Daniel Frankcom', ['direct_message','ambient'], (bot, messa
 	}
 );
 
+//Taunt Phil
+controller.hears('by Daniel Frankcom', ['direct_message','ambient'], (bot, message) => {
+    bot.api.reactions.add(createReaction(message, 'shit'));
+    }
+);
+
 //Initiate poll
 controller.hears('vote!', ['ambient'], (bot, message) => {
     bot.api.reactions.add(createReaction(message, 'thumbsup'));
     bot.api.reactions.add(createReaction(message, 'thumbsdown'));
 });
 
+//Tries to find relevant emojis to the text given
 controller.hears('.+', ['mention', 'direct_mention', 'direct_message'], (bot, message) =>  {
     // Get text from message
     const text = message.text.toLowerCase().trim();
