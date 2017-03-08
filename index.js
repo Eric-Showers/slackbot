@@ -45,7 +45,7 @@ controller.hears('vote!', ['ambient'], (bot, message) => {
     bot.api.reactions.add(createReaction(message, 'thumbsdown'));
 });
 
-controller.hears('Dan', ['ambient'], (bot, message) => {
+controller.hears(' Dan ', ['ambient'], (bot, message) => {
     bot.reply(message, 'He\'s the man!');
 });
 
