@@ -51,6 +51,10 @@ controller.hears('vote!', ['ambient'], (bot, message) => {
     bot.api.reactions.add(createReaction(message, 'thumbsdown'));
 });
 
+controller.hears('Dan', ['ambient'], (bot, message) => {
+    bot.reply(message, 'He\'s the man!');
+});
+
 //Tries to find relevant emojis to the text given
 controller.hears('.+', ['mention', 'direct_mention', 'direct_message'], (bot, message) =>  {
     // Get text from message
