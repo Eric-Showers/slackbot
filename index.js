@@ -49,7 +49,7 @@ controller.hears('Dan', ['ambient'], (bot, message) => {
     bot.reply(message, 'He\'s the man!');
 });
 
-controller.hears(':isis:', ['ambient'](bot, message) => {
+controller.hears(':isis:', ['ambient'], (bot, message) => {
     bot.reply(message, 'Soon my brothers!');
 });
 
