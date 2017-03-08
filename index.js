@@ -39,12 +39,6 @@ controller.hears('by Daniel Frankcom', ['direct_message','ambient'], (bot, messa
 	}
 );
 
-//Taunt Phil
-controller.hears('by phildenhoff', ['direct_message','ambient'], (bot, message) => {
-    bot.api.reactions.add(createReaction(message, 'shit'));
-    }
-);
-
 //Initiate poll
 controller.hears('vote!', ['ambient'], (bot, message) => {
     bot.api.reactions.add(createReaction(message, 'thumbsup'));
@@ -53,6 +47,10 @@ controller.hears('vote!', ['ambient'], (bot, message) => {
 
 controller.hears('Dan', ['ambient'], (bot, message) => {
     bot.reply(message, 'He\'s the man!');
+});
+
+controller.hears(':isis:', ['ambient'](bot, message) => {
+    bot.reply(message, 'Soon my brothers!');
 });
 
 //Tries to find relevant emojis to the text given
