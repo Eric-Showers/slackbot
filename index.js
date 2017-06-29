@@ -49,10 +49,6 @@ controller.hears(' Dan ', ['ambient'], (bot, message) => {
     bot.reply(message, 'He\'s the man!');
 });
 
-controller.hears(':isis:', ['ambient'], (bot, message) => {
-    bot.reply(message, 'Soon my brothers!');
-});
-
 //Tries to find relevant emojis to the text given
 controller.hears('.+', ['mention', 'direct_mention', 'direct_message'], (bot, message) =>  {
     // Get text from message
